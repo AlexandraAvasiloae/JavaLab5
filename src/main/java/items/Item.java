@@ -19,15 +19,16 @@ abstract public class Item implements Serializable {
     /**
      * Constructor
      * if the path does not exist, a custom exception will be thrown
+     *
      * @param name
      * @param path
      * @throws InvalidItemSpecificationsException
      */
     public Item(String name, String path) throws InvalidItemSpecificationsException {
-        try{
+        try {
             FileInputStream fi = new FileInputStream(path);
-            this.name=name;
-            this.path=path;
+            this.name = name;
+            this.path = path;
         } catch (FileNotFoundException e) {
             throw new InvalidItemSpecificationsException("The path does not exist!");
         }

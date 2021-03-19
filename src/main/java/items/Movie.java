@@ -17,6 +17,7 @@ public class Movie extends Item {
 
     /**
      * Constructor
+     *
      * @param name
      * @param path
      * @throws InvalidItemSpecificationsException
@@ -27,6 +28,7 @@ public class Movie extends Item {
 
     /**
      * this method set the year the film was released and throw a exception if the year could not be good
+     *
      * @param year
      * @throws InvalidItemSpecificationsException
      */

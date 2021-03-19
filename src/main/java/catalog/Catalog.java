@@ -27,28 +27,30 @@ public class Catalog implements Serializable {
 
     /**
      * Constructor
+     *
      * @param name
      * @param path
      */
-    public Catalog(String name, String path){
-        this.name=name;
-        this.path=path;
+    public Catalog(String name, String path) {
+        this.name = name;
+        this.path = path;
     }
 
     /**
      * This method add items to the catalog
+     *
      * @param item
      */
-    public void addItem(Item item){
+    public void addItem(Item item) {
         items.add(item);
     }
 
     /**
      * This method display the catalog content
      */
-    public void list(){
+    public void list() {
         BasicConfigurator.configure();
-        log.info(this.name+this.items);
+        log.info(this.name + this.items);
     }
 
 }

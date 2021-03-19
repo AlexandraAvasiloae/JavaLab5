@@ -1,7 +1,7 @@
 import catalog.Catalog;
+import catalog.CatalogUtil;
 import catalog.InvalidCatalogException;
 import items.Book;
-import catalog.CatalogUtil;
 import items.InvalidItemSpecificationsException;
 import items.Movie;
 import org.apache.log4j.BasicConfigurator;
@@ -24,7 +24,7 @@ public class Main {
      * @throws IOException
      */
     private void testCreateSaveAndList() throws InvalidItemSpecificationsException, IOException {
-        Catalog catalog = new Catalog("My catalog.Catalog", "D:\\java5\\catalog.txt");
+        Catalog catalog = new Catalog("My catalog.Catalog", "D:\\java5\\catalog.ser");
 
         Movie movie = new Movie("Titanic", "D:\\FILME\\movie\\movie.mkv" );
         movie.setYear(1997);

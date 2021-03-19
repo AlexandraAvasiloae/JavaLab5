@@ -16,16 +16,18 @@ public class Book extends Item {
 
     /**
      * Constructor
+     *
      * @param name
      * @param path
      * @throws InvalidItemSpecificationsException
      */
     public Book(String name, String path) throws InvalidItemSpecificationsException {
-        super(name,path);
+        super(name, path);
     }
 
     /**
      * this method set the year the book was published and throw a exception if the year could not be good
+     *
      * @param year
      * @throws InvalidItemSpecificationsException
      */
