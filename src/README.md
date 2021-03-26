@@ -31,8 +31,8 @@ Process finished with exit code 0
 
 ##Optional(2p)
 ```
-    
-(done)Create a shell that allows reading commands from the keyboard, together with their arguments.
+ 
+(done))Create a shell that allows reading commands from the keyboard, together with their arguments.
 (done)Represent the commands using classes instead of methods. Use an interface or an abstract class in order to desribe a generic command.
 (done)Implement the commands add, list, save, load, play (create the classes AddCommand, ListCommand, etc.).
 (done)Implement the command report: create (and open) an HTML report representing the content of the catalog.
