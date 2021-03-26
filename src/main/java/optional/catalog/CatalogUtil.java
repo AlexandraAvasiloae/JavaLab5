@@ -1,6 +1,7 @@
-package catalog;
+package optional.catalog;
 
-import items.Item;
+import optional.exceptions.InvalidCatalogException;
+import optional.items.Item;
 
 import java.awt.*;
 import java.io.*;
@@ -10,19 +11,6 @@ import java.io.*;
  */
 public class CatalogUtil {
 
-    /**
-     * this method write the contents of the catalog to the file specified by the path
-     * if the path does not exist in the local system, a exception will pe thrown
-     *
-     * @param catalog
-     * @throws IOException
-     */
-    public static void save(Catalog catalog) throws IOException {
-
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(catalog.getPath()))) {
-            oos.writeObject(catalog);
-        }
-    }
 
     /**
      * this method load the catalog from file where it was saved

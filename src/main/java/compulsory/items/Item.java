@@ -1,4 +1,4 @@
-package items;
+package compulsory.items;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

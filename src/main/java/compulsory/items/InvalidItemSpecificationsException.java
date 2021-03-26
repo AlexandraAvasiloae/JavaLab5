@@ -1,4 +1,4 @@
-package items;
+package compulsory.items;
 
 /**
  * a custom exception

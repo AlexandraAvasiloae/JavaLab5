@@ -1,6 +1,6 @@
-package catalog;
+package compulsory.catalog;
 
-import items.Item;
+import compulsory.items.Item;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -37,7 +37,7 @@ public class Catalog implements Serializable {
     }
 
     /**
-     * This method add items to the catalog
+     * This method add compulsory.catalog.items to the compulsory.catalog
      *
      * @param item
      */
@@ -46,7 +46,7 @@ public class Catalog implements Serializable {
     }
 
     /**
-     * This method display the catalog content
+     * This method display the compulsory.catalog content
      */
     public void list() {
         BasicConfigurator.configure();

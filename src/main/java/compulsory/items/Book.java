@@ -1,4 +1,4 @@
-package items;
+package compulsory.items;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -7,13 +7,12 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 @EqualsAndHashCode
+@ToString
 
-public class Movie extends Item {
-
+public class Book extends Item {
+    private String author;
     private int year;
-    private String director;
 
     /**
      * Constructor
@@ -22,12 +21,12 @@ public class Movie extends Item {
      * @param path
      * @throws InvalidItemSpecificationsException
      */
-    public Movie(String name, String path) throws InvalidItemSpecificationsException {
+    public Book(String name, String path) throws InvalidItemSpecificationsException {
         super(name, path);
     }
 
     /**
-     * this method set the year the film was released and throw a exception if the year could not be good
+     * this method set the year the book was published and throw a exception if the year could not be good
      *
      * @param year
      * @throws InvalidItemSpecificationsException
